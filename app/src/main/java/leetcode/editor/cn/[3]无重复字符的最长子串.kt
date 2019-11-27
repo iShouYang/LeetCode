@@ -25,7 +25,7 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution3 {
     fun lengthOfLongestSubstring(s: String): Int {
         if (s.isEmpty()) return 0
 

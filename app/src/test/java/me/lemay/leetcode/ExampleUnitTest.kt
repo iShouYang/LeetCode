@@ -3,6 +3,8 @@ package me.lemay.leetcode
 import ListNode
 import Solution
 import Solution2
+import Solution234
+import Solution3
 import org.junit.Test
 
 /**
@@ -14,23 +16,23 @@ class ExampleUnitTest {
 
     @Test
     fun test2() {
-        val node = ListNode(9)
-        node.next = ListNode(9)
-        node.next!!.next = ListNode(9)
-        node.next!!.next!!.next = ListNode(9)
-        node.next!!.next!!.next!!.next = ListNode(9)
-        node.next!!.next!!.next!!.next!!.next = ListNode(9)
-        node.next!!.next!!.next!!.next!!.next!!.next = ListNode(9)
-        node.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(9)
-        node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(9)
-        node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(9)
-        node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(9)
+        val node = ListNode(6)
+        node.next = ListNode(5)
+        node.next!!.next = ListNode(4)
+        node.next!!.next!!.next = ListNode(3)
+        node.next!!.next!!.next!!.next = ListNode(2)
+        node.next!!.next!!.next!!.next!!.next = ListNode(1)
+        node.next!!.next!!.next!!.next!!.next!!.next = ListNode(0)
+        node.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(0)
+        node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(1)
+        node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(2)
+        node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next = ListNode(3)
         node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next =
-            ListNode(9)
+            ListNode(4)
         node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next =
-            ListNode(9)
+            ListNode(5)
         node.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next =
-            ListNode(9)
+            ListNode(6)
         val node1 = ListNode(2)
         node1.next = ListNode(9)
         node1.next!!.next = ListNode(9)
@@ -49,10 +51,20 @@ class ExampleUnitTest {
         node1.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next!!.next =
             ListNode(9)
         println(Solution2().addTwoNumbers(node, node1))
+
+        val node3 = ListNode(6)
+        node3.next = ListNode(5)
+        node3.next!!.next = ListNode(6)
+        Solution234().isPalindrome(node3)
     }
 
     @Test
     fun test3() {
-        println(Solution().lengthOfLongestSubstring("abcabcbb"))
+        println(Solution3().lengthOfLongestSubstring("abcabcdbb"))
+    }
+
+    @Test
+    fun test4() {
+        Solution().findMedianSortedArrays(intArrayOf(4, 5, 6), intArrayOf(1, 2, 3))
     }
 }
