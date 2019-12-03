@@ -5,6 +5,8 @@ import Solution
 import Solution2
 import Solution234
 import Solution3
+import Solution4
+import Solution53
 import org.junit.Test
 
 /**
@@ -65,6 +67,16 @@ class ExampleUnitTest {
 
     @Test
     fun test4() {
-        Solution().findMedianSortedArrays(intArrayOf(4, 5, 6), intArrayOf(1, 2, 3))
+        Solution4().findMedianSortedArrays(intArrayOf(4, 5, 6), intArrayOf(1, 2, 3))
+    }
+
+    @Test
+    fun test53() {
+        println(Solution53().maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)))
+    }
+
+    @Test
+    fun test70() {
+        println(Solution().climbStairs(1))
     }
 }

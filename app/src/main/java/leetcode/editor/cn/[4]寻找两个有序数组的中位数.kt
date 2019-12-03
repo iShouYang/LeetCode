@@ -24,7 +24,7 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution4 {
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
         return 0.0
     }
