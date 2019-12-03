@@ -1,7 +1,7 @@
 package me.lemay.leetcode
 
 import ListNode
-import Solution
+import Solution70
 import Solution2
 import Solution234
 import Solution3
@@ -77,6 +77,6 @@ class ExampleUnitTest {
 
     @Test
     fun test70() {
-        println(Solution().climbStairs(1))
+        println(Solution70().climbStairs(44))
     }
 }
